@@ -99,6 +99,26 @@ public class Main {
             );
         }
 
+        // T6
+        Circle circle6 = new Circle("C6", new AsciiRenderer());
+
+        check(
+                "T6",
+                "Circle + AsciiRenderer",
+                circle6.execute(),
+                "ASCII circle radius=2"
+        );
+
+        // T7
+        Square square7 = new Square("S7", new AsciiRenderer());
+
+        check(
+                "T7",
+                "Square + AsciiRenderer",
+                square7.execute(),
+                "ASCII square side=3"
+        );
+
         System.out.println("SUMMARY: " + passed + "/" + total + " PASS");
     }
 
